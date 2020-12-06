@@ -12,7 +12,7 @@ class login_test(unittest.TestCase):
        user = "instructor"
        pwd = "maverick1a"
        self.driver.maximize_window()
-       self.driver.get("http://localhost:8080/auth")
+       self.driver.get("https://gallant-ardinghelli-0dbec2.netlify.app/")
        elem = self.driver.find_element_by_xpath(
            "/html/body/div[1]/div[3]/div/div/div/div[2]/div/div/div/div/form/div/div[1]/div/div[2]/div[1]/div/input")
        elem.send_keys(user)
@@ -41,7 +41,7 @@ class login_test(unittest.TestCase):
         elem = self.driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/div[2]/div/div/div[3]/form/div/div[6]/div/div[1]/div/input")
         elem.send_keys("30")
         elem = self.driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/div[2]/div/div/div[3]/form/div/div[7]/div/div[1]/div/input")
-        elem.send_keys("10252020")
+        elem.send_keys("10202020")
         time.sleep(self.wait_time)
         elem = self.driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/div[2]/div/div/div[3]/form/button[1]").click()
 
@@ -62,7 +62,7 @@ class login_test(unittest.TestCase):
         elem = self.driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/div[2]/div/div/div[3]/form/div/div[6]/div/div[1]/div/input")
         elem.send_keys("30")
         elem = self.driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/div[2]/div/div/div[3]/form/div/div[7]/div/div[1]/div/input")
-        elem.send_keys("10252020")
+        elem.send_keys("10202020")
         elem = self.driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/div[2]/div/div/div[3]/form/button[1]").click()
 
     def test_intake_delete(self):
